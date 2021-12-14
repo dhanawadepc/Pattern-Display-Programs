@@ -1,0 +1,20 @@
+'''
+Output::
+          *
+        * * *
+      * * * * *
+    * * * * * * *
+  * * * * * * * * *
+  '''
+  n = 5
+for i in range (n):
+    for j in range (i,n):
+        print(' ', end=' ')
+    # for j in range (i + 1): # One less column has to printed to create top of the hill.
+    for j in range(i):
+        print('*', end=' ')
+    for j in range(i + 1):
+            print('*', end=' ')
+    # for j in range (i,n):  #  There is no need to write 4th loop. as it printed blank only
+    #     print(' ', end=' ')
+    print()
